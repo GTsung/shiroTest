@@ -20,11 +20,11 @@ public class TestAuthenticator {
 
     private void loginAction(String path) {
         //1、获取SecurityManager工厂，此处使用Ini配置文件初始化SecurityManager
-        Factory<org.apache.shiro.mgt.SecurityManager> factory =
+        Factory<SecurityManager> factory =
                 new IniSecurityManagerFactory(path);
 
         //2、得到SecurityManager实例 并绑定给SecurityUtils
-        org.apache.shiro.mgt.SecurityManager securityManager = factory.getInstance();
+        SecurityManager securityManager = factory.getInstance();
         SecurityUtils.setSecurityManager(securityManager);
 
         // 3、得到Subject及创建用户名/密码身份验证Token（即用户身份/凭证）
