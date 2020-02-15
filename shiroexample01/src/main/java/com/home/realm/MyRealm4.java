@@ -4,7 +4,6 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.realm.Realm;
 
 /**
- * @author guxiaocong
  * @date 2020/2/15
  */
 public class MyRealm4 implements Realm {

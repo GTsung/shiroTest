@@ -12,7 +12,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author guxiaocong
  * @date 2020/2/15
  */
 public class TestShiro {
